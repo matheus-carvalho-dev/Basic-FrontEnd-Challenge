@@ -1,0 +1,210 @@
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 1.8rem;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  place-content: center;
+  background-color: #ecf2ff;
+}
+main {
+  font-family: "Hanken Grotesk";
+  margin: auto auto;
+  display: flex;
+  text-align: center;
+  place-content: center;
+  background-color: white;
+  max-width: 737px;
+  height: 512px;
+
+  border-radius: 3rem;
+}
+
+.MainResult {
+  flex: 0 0 0;
+  display: grid;
+  flex-direction: column;
+  place-items: center center;
+  place-content: center;
+  text-align: center;
+  border-radius: 3rem;
+  flex: 1;
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  gap: 2rem;
+  padding: 4rem 3rem;
+}
+
+.MainResult h1 {
+  font-size: 2.4rem;
+  color: #ebf1ff;
+}
+
+.MainResult p {
+  color: #c4ccdf;
+  padding: 25px;
+}
+.MainResult .classification {
+  font-size: 3rem;
+  color: white;
+}
+
+.MainResult .grade {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  place-content: center;
+  aspect-ratio: 1 / 1;
+  background: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  border-radius: 100%;
+  color: white;
+}
+.grade h2 {
+  font-size: 7.2rem;
+}
+
+span {
+  font-size: 1.8rem;
+  color: #c4ccdf;
+}
+
+
+
+.SideResult {
+  padding: 30px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.SideResult h1 {
+  text-align: left;
+  font-size: 2.4rem;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 12px;
+}
+li {
+  display: grid;
+  font-size: 1.8rem;
+  grid-template-columns: auto 1fr auto;
+  text-align: left;
+  padding: 20px 10px;
+  border-radius:15px;
+}
+
+li:nth-child(2):not(strong) {
+  background-color: hsla(0, 100%, 67%, 0.05);
+ color: hsla(0, 100%, 67%, 1);
+ & p{
+    color: #a5a9b3;
+    & strong{
+        color: black;
+font-weight: 550;
+    }
+ }
+}
+li:nth-child(3) {
+  background-color: hsla(39, 100%, 56%, 0.05);
+  color: hsla(39, 100%, 56%);
+  & p{
+    color: #a5a9b3;
+       & strong{
+        color: black;
+font-weight: 550;
+    }
+ }
+}
+li:nth-child(4) {
+  background-color: hsla(166, 100%, 37%, 0.05);
+  color: hsla(166, 100%, 37%);
+  & p{
+    color: #a5a9b3;
+        & strong{
+        color: black;
+font-weight: 550;
+    }
+ }
+}
+li:nth-child(5) {
+  background-color: hsla(234, 85%, 45%, 0.05);
+  color: hsla(234, 85%, 45%);
+  & p{
+    color: #a5a9b3;
+        & strong{
+        color: black;
+        font-weight: 550;
+
+    }
+ }
+}
+img{
+    margin: 0 10px 0 0;
+}
+
+.button{
+    background-color: #303b5A;
+    font-size: 1.8rem;
+    width: 100%;
+    padding: 15px 0px;
+    border-radius: 4rem;
+    color: white;
+    place-self: center a;
+
+}
+
+.button:hover{
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%) );
+}
+
+@media (max-width:780px){
+    body{
+        height: 100vh;
+        display: box;
+    }
+    main{
+        height: auto;
+        flex-direction: column;
+}
+.MainResult{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+}
